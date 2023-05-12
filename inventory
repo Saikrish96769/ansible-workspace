@@ -1,0 +1,15 @@
+
+[tomcat]
+ansible1ubuntu    ansible_host=54.210.206.135     ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="~/downloads/saieast.pem"
+
+
+[nginx]
+ansible2ubuntu    ansible_host=52.90.93.145    ansible_port=22     ansible_user=ubuntu    ansible_ssh_private_key_file="~/downloads/saieast.pem"
+
+[all]
+ansible1ubuntu    ansible_host=54.210.206.135     ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="~/downloads/saieast.pem"
+ansible2ubuntu    ansible_host=52.90.93.145     ansible_port=22     ansible_user=ubuntu   ansible_ssh_private_key_file="~/downloads/saieast.pem"
+
+
+[all:vars]
+ansible_ssh_pipelining=no
